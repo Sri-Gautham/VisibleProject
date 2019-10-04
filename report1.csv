@@ -1,0 +1,119 @@
+Sentence,intent
+i need help porting in my number to visible from verizon,activate.portmynumber
+iccid  verizon phone   verizon account   verizon pin   current zipcode  original zipcode when signed up for number was either  or,ignore
+also sent a text with all the above information listed if that might be faster,ignore
+hey there courtney here happy to help,ignore
+ok ive read your request and can look into your migration from migration no worries,activate.portmynumber
+hello,activate.greetings
+hey there,activate.greetings
+this is the first time i have gotten someone live,ignore
+im so excited,ignore
+yay,ignore
+so i saw that your app updated over the weekend,ignore
+thanks for bearing with our long wait time we appreciate your time and patience and apologize for the wait,activate.greetings
+and tried to initialize the port again this morning,activate.portmynumber
+thank you for appreciating your new customer,activate.greetings
+youre so welcome,activate.greetings
+let me look into your account and see whats going on my friend,ignore
+what is the full name on the account and the email please,activate.accountdetails
+the account is under dominic j sartino,ignore
+the email is getcuedgmailcom,ignore
+thanks so much allow me a moment to locate your account and i will dive right in for you,ignore
+oh the visible account is different,ignore
+that was my verizon accoutn info,ignore
+ok i need your visible account info,ignore
+the visible account is under bethany sartino my wife and her email is bethsartinogmailcom,activate.accountdetails
+it might be beth or bethany on the account,ignore
+ok allow me a moment to locate that please,ignore
+sure thing,ignore
+,
+i used to work for sprint and when we did ports sometimes we needed the original zipcode from where the number was originally activated,activate.portmynumber
+can you give me a few moments while i work on this,ignore
+yep,ignore
+thanks,activate.greetings
+ok beth where in the port process are you getting stuck my friend,activate.portissues
+well i have submitted my informaiton through the app multiple times,ignore
+ok and what error msg are you getting,ignore
+in my experience working for sprint we sometimes have to use the older zipcodes from where the number was originally activated i have a couple we can try if my curren billing zipcode seems to be the hangup,ignore
+there isnt a error code the phone turns on and nothing happens,ignore
+can you walk through the setup,ignore
+i can wait around while you do it just let me know if you get stuck we do things differently than sprint my friend,ignore
+so i can just power the device on doing that right now,ignore
+no you do not have an active account with us,activate.setup
+the phone is on and the visible sim card is in,ignore
+now what do i do,ignore
+ok,ignore
+what is the phone number you are trying to bring over on the account i have there is no sim card associated with it my friend,ignore
+the phone number is,ignore
+ok thanks,ignore
+the visible sim that is have is,ignore
+ok hang tight please,ignore
+when did you receive this sim card beth,activate.simcarddetails
+with my phone that i ordered from your website wednesday of last week,ignore
+ok you must have more than one account my friend one moment please,ignore
+i did try to sign up on the app  times to get my number to port,ignore
+ok hang tight please,ignore
+could you have used another email by chance,ignore
+hobsonblgmailcom or getcuedgmailcom are my other two accounts,ignore
+i just sent a confirmation email to the one thats on your account can you be a peach and click it for me so i can gain access to it please,ignore
+do you know which one you sent it to,ignore
+yes but i cannot give you that information my friend,ignore
+was it one of the  i gave you,ignore
+yes,ignore
+excellent i found it just now and confirmed,ignore
+thanks one moment please,ignore
+youre welcome,activate.greetings
+,
+thanks so much for your continued patience beth it looks like youre migrating from verizon correct,activate.portnumber
+yes,ignore
+awesome,ignore
+will you be able to tell me when the migration is complete,activate.portstatus
+checking on that now,ignore
+you have the sim inserted do you have the app installed,ignore
+yes and yes,ignore
+great,ignore
+are you connected to wifi,ignore
+yes just connected to wifi,ignore
+perfect,ignore
+need to update the visible app right now hold on,activate.updateapp
+ok update is finished,ignore
+should i sign in,ignore
+great what is it saying now,ignore
+should i sign into the app,activate.appsignin
+am i using the hobsonblgmailcom or should i used my bethsartinogmailcom,ignore
+i get lots of notifications at bethsartino not except the one you recently sent to hobsonbl,ignore
+the email you verified my friend again i cant provide you with that info,ignore
+i am logged in now,ignore
+ok what are you seeing in the app,ignore
+asking if i want to setup fingerprint identification,ignore
+ok nowi see an activate button,ignore
+that is your choice let me know when you get to the home screen,ignore
+perfect,ignore
+press it,ignore
+the card number is wrong though shoudl i change that first,ignore
+yes,ignore
+ok hold on i need to change that,ignore
+take your time please ill wait around,ignore
+ok payment info is updated,activate.updatepayment
+great go for your activation now please,ignore
+testing my new phone service out hold on please,ignore
+im here my friend welcome to the family,ignore
+all is good,ignore
+before you go do you have an account number i can save for visible,ignore
+i keep all of that info,ignore
+sure one moment please,ignore
+thanks for your patience your account number is  can i assist you with anything else on this magnificent monday,ignore
+one more thing i know that i had a pin on my verizon account is there anything that needs to be setup like that on my visible account,ignore
+magnificent monday i like that,ignore
+ok so youll be porting out got it your pin is,ignore
+nope not porting out but if i need to in the future i dont want to try for three days to get someone on the chat,ignore
+no worries weve got your back,ignore
+you have been wonderful today thank you for all your help,ignore
+youre so welcome,ignore
+i am looking forward to an excellent experinece,ignore
+were excited to have you in the family beth thank you for chatting with visible it was a pleasure helping you if you have any other questions feel free to chat us back well be happy to help out have a great day,ignore
+btw would i be grandfathered into the unlimited data without the mb cap,ignore
+yes,ignore
+excellent thank you,activate.greetings
+have a magnificent monday,activate.greetings
+you too,activate.greetings
