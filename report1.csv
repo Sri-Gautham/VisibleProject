@@ -1,0 +1,505 @@
+Sentence,Intent
+visclcviscareorauthdtenganchoredcc chat id,ignore
+intel mac os x browser,ignore
+chrome page markers,ignore
+vishome vishome vishome vishome vissignin page marker,ignore
+to customer let us know whats going on and well connect you with a visible team member,chat.intent
+trying to activate service,activate_a_device
+wwwvisiblecom page marker,ignore
+customer account,ignore
+hi jesse here with visible and ill be taking care of you today who do i have the pleasure of speaking with today,chat.greeting
+hi chris how are you today,chat.greeting
+i am well,chat.greeting
+im trying to activate my service but i think i hit a roadbump,activate_a_device
+thats great to hear chris i have your account here pulled up,ignore
+are you getting an error,activation_troubleshooting
+ya says no service and when i put the sim card into my phone it said it had no active service,activation_troubleshooting
+were you able to verify email,activation_troubleshooting
+i am on page plus cellular but i broke my phone that is used with that account i purchased a different phone and that is the phone i am trying to activate with visible,porting_sub_flow
+yes i did verify email,conditional.positive
+okay after you put the sim in make sure to connect it to wifi then open the visible app,activation_troubleshooting
+i did,ignore
+are you porting your number,porting_sub_flow
+yes i would like to use the same number,conditional.positive
+but the phone itself is not the same phone i used with page plus,porting_sub_flow
+it is a different phone,porting_sub_flow
+okay when you registered and checked out it asked if you wanted to keep the same number and it should of asked for the account number and pin from previous provider do you remember inputting that information,porting_sub_flow
+yes it did,conditional.positive
+and i put in my page plus account number and everything seemed fine,porting_sub_flow
+okay can you tell me what model phone you have currently and want to use on visible,compatibility_check_sub_flow
+can you tell me the imei please to check it for you,find_imei_sub_flow
+it said it was compadible,ignore
+yes it is,conditional.positive
+when you open the app what do you see,activation_troubleshooting
+so the check mark is there for validate email and sim installed,activation_troubleshooting
+it says activate service which i tried already,activation_troubleshooting
+what happens after you click activate,cycle_device_sub_flow
+ok now i got farther than i did before it says to cycle my device,cycle_device_sub_flow
+assuming that means turn it off and back on,cycle_device_sub_flow
+yes please,conditional.positive
+so i did and it showed i had visible service but when i tried to make a call it said failed and now it says no service in the top left,activation_troubleshooting
+okay no worries lets try this remove sim and power off device for minute then turn back on and reinsert when it is back on,cycle_device_sub_flow
+ill be here,chat_wait
+make sure to update carrier settings if you get that pop up,activation_troubleshooting
+powering phone up now,ignore
+i am in business,activation_successful
+thank you,chat.greeting
+so now what do i do about my page plus account,faq_account_sub_flow
+it should disconnect it but i would call them to double check,faq_account_sub_flow
+ok thank you for your help,chat.greeting
+youre welcome were always glad to help at this time did you have any questions or anything else i can help out with today,chat.additional_queries
+nope ty,conditional.negative
+thanks for using visible chat please feel free to chat back in if you need further assistance have a nice one,chat.greeting
+customer stopped typing,ignore
+visclcviscareinappioshelp chat id,ignore
+to customer let us know whats going on and well connect you with a visible team member,chat.intent
+new account no service,activate_a_device
+iphone salesforce,ignore
+customer account,ignore
+open os,ignore
+thanks for chatting in today youve reached the right person im chere and ill be taking care of you,chat.greeting
+oh no not having service isnt something i want you worry about ill do everything i can to get you up and running asap,ignore
+still there,ignore
+are you connected to wifi,activation_troubleshooting
+can you toggle airplane mode on for seconds for me then back off,activation_troubleshooting
+not without losing connection and the chat,ignore
+no itll work trust me,ignore
+still there,ignore
+did you try it,activation_troubleshooting
+still no service,conditional.negative
+can you remove the sim for seconds then reinsert it for me,cycle_device_sub_flow
+can you go to your settings and verify your carrier,activation_troubleshooting
+says activated now,activation_successful
+can you make a test call,check_call_or_text_flow
+how are things coming along,ignore
+outgoing call worked,conditional.positive
+what about text,check_call_or_text_flow
+yes text appears to be ok as well,conditional.positive
+great if you have any other issues please dont hesitate to chat back in,chat.additional_queries
+thank you for choosing visible and allowing me to assist you today if you think of any other questions or concerns please feel free to chat back in or check out our faqs customer stopped typing,chat.additional_queries
+visclcviscareinappioshelp chat id,ignore
+to customer let us know whats going on and well connect you with a visible team member,chat.intent
+iphone salesforce,ignore
+customer account,ignore
+open os,ignore
+good morning its timmie the visible doctor and i will be more than happy to assist you today,chat.greeting
+i got my sim card today and installed in my phone,activate_a_device
+cool welcome to the visible family lets get you activated,ignore
+so i was not sure if something card is activated,ignore
+youre welcome manning,chat.greeting
+what device do we have,compatibility_check_sub_flow
+iphone x,compatibility_check_sub_flow
+cool lets go ahead and get your service working,ignore
+lets try this step from the home screen navigate,activation_troubleshooting
+settings settings icon general reset tap reset network settings if prompted enter your passcode tap reset network settings,activation_troubleshooting
+i will be here waiting with you chat window restored,chat_wait
+okay reset,conditional.positive
+i see visible on top left corner,ignore
+ok cool whoop whoop lets try to place a call and or text,check_call_or_text_flow
+im deaf so just text lol,ignore
+no worries lets send out a text,check_call_or_text_flow
+let me know what happens,chat_wait
+text is working,conditional.positive
+cool lets try using the internet i want to make sure you are able to surf the web,check_data_sub_flow
+so now i have ultimate data right,check_unlimited
+that is correct we are totally unlimited,conditional.positive
+internet web seem not working at moment,conditional.negative
+ok do you have the device connected to wifi at this time,check_wifi
+yes i have wifi,conditional.positive
+ok just wanted to make sure lets go into the visible app and make sure,activation_troubleshooting
+if you see an activate button select that button chat window minimized chat window restored,activation_troubleshooting
+yes i see it,conditional.positive
+ok cool lets go ahead and hit that activate button,activation_troubleshooting
+now internet web is working,activation_successful
+just did,conditional.positive
+whoop whoo teamwork we did that,ignore
+wow internet pretty blazing,ignore
+now i can say welcome to the visible family officially,ignore
+thank you,chat.greeting
+youre welcome manning do you have any further questions or concerns for me today,chat.additional_queries
+nope if i have other questions i will back to here,conditional.negative
+ok we are always here to assist if you have any further question or concerns please feel free to chat back in with us,chat.additional_queries
+customer closed chat window,ignore
+visclcvissalesormarketingdtenganchoredcc chat id,ignore
+windows browser,ignore
+chrome page markers,ignore
+vishome vishome visfaq vishome vishome page marker,ignore
+to customer let us know whats going on and well connect you with a visible team member,chat.intent
+wwwvisiblecom page marker,ignore
+customer account,ignore
+not validated,ignore
+hey thanks for chatting in my name is cameron and ill be helping you out today,chat.greeting
+hey cameron,chat.greeting
+how can i assist you,chat.greeting
+i have been struggling through getting the visible service activated on my iphone since yesterday and this is almost my last attempt to have it setup otherwise i am not going with visible due to the lack of being able to resolve my service activation issue,activate_a_device
+i havent had such a problem with any carriers i have moved through,ignore
+really hope you can get this resolved for me,ignore
+i apologize youre experience hasnt been the best,chat.apologize
+before we kick things off do you mind giving me your full name and the last digits of your imei so i can pull up your account you can find your imei in settingsgeneralabout,find_imei_sub_flow
+sure my full name is priyo chatterjee,ignore
+my email address is priyochotmailcom,ignore
+and the last of the imei is,ignore
+i still dont have the visible sim popped into the phone yet please let me know when youd like me to that,insert_sim_flow
+you can insert the sim now,insert_sim_flow
+i also had a visible case opened with the support team the visible case is,check_previous_case_flow
+sure i will pop in the sim now,insert_sim_flow
+im reviewing the case now,check_previous_case_flow
+thanks the visible sim is now popped into the phone and i have restarted the phone now,insert_sim_flow
+go into the visible app and tell me what you see,activation_troubleshooting
+also the port out from ho service to visible should have been completed by now since it is over hours since that port over request was made,porting_sub_flow
+sure give me min,chat_wait
+so under the next steps the validate email and sim installed are checked with a green tick sign,activation_troubleshooting
+what are your options to click,activation_troubleshooting
+the hang tight,ignore
+transferring number over is unchecked,activation_troubleshooting
+do you see the option to activate,activation_troubleshooting
+nothing really except the track order button,conditional.negative
+interrupted not sent gotcha,ignore
+no i dont see that button activated,ignore
+lets try signing out of the app and signing back in,sign_back_in_flow
+okay lets try that,ignore
+now one more thing under the account tab the pay now button is activated do i need to do anything with that,faq_account_sub_flow
+no the card will be charged once you activate,faq_account_sub_flow
+okay i will try logging out then and logging back in,sign_back_in_flow
+im logged in still seeing the same thing as i said before no activate button is showing up,ignore
+lets try uninstalling and reinstalling the app this time,reinstall_app_flow
+okay sure lets try that give me min,chat_wait
+ill be here,chat_wait
+do you want me to login as soon as ive reinstalled it,ignore
+okay all done and still the same thing no activate button,conditional.negative
+let me take a deeper look into this for you,ignore
+has the phone number port over been completed because thats what seems to be still missing as per the visible app message,porting_sub_flow
+im checking on that as well,ignore
+ill have confirmation on that in a moment,ignore
+okay thanks,chat.greeting
+youre welcome,chat.greeting
+lets try resetting your network settings go to settingsgeneral resetreset network settings,reset_network_flow
+okay cameron the network settings are reset and the phone is back to the menu should i try to login to visible app again,reset_network_flow
+yes please,conditional.positive
+nope still the same thing,conditional.negative
+hey cameron so i have to drop my kid for a soccer game now it will take me minutes to get back how can we continue this conversation with you helping me through would you be able to call me at a phone in another minutes,keep_chat_active_flow
+or i can keep the chat window active and resume as soon as i come back after dropping him,keep_chat_active_flow
+we just needed to get these steps out of the way im resubmitting the ticket for and will stay on top of this for you,ignore
+okay cameron but this has now been unresolved for days and i am without a phone service i dont have to explain but you know what that means in todays world right,issue_unresolved_flow
+so if i dont get a resolution this time i am afraid i wont be able to give visible a try,issue_unresolved_flow
+i sincerely apologize for that ive already made this my top priority and ive placed the case under high priority,chat.apologize
+i will get this resolved for you i promise,chat.apologize
+i will personally make sure this gets resolved for you,chat.apologize
+sounds good cameron if you say so i really hope you can because i am really frustrated and about to pull the plug if this doesnt resolve by tonight,activation_unsuccessful
+thank you cameron i really appreciate it,chat.greeting
+i understand completely i would be frustrated as well i got you before we say goodbye priyonath do you have any other questions for me,chat.additional_queries
+can you give me a case as well i hate to have to keep chatting over and over again and going around in circles like i have been doing the past days,get_case_number_flow
+the case number is im updating it right now im removing the circle today,get_case_number_flow
+no i dont have anything else i just hope this issue gets resolved and i have phone service to make calls and receive texts by tonight thats all i need,ignore
+thank you cameron for all your help on this,chat.greeting
+youre welcome good luck on the game,chat.greeting
+it was my pleasure to chat with you today were always here for you so chat back in if you have any other questions as always thanks for being part of the visible family,chat.additional_queries
+customer closed chat window,ignore
+visclcvissalesormarketingdtenganchoredcc chat id,ignore
+windows windows server r browser,ignore
+chrome page markers,ignore
+vishome visplan vishome vishome vishome page marker,ignore
+to customer let us know whats going on and well connect you with a visible team member,chat.intent
+customer account,ignore
+not validated,ignore
+wwwvisiblecomplan page marker,ignore
+good afternoon thanks for reaching out to visible im trena how can i help you,chat.greeting
+how do i setup my new phone,activate_a_device
+i just received it,ignore
+put the sim in,insert_sim_flow
+i can help you set your phone up,ignore
+what kind of phone do you have,compatibility_check_sub_flow
+iphone s,compatibility_check_sub_flow
+are you on wifi,check_wifi
+are you logged into the app,check_login_flow
+whats the app,ignore
+log in to the visible app for me,check_login_flow
+while you are doing that can you give me the first and last name on your account please,activation_troubleshooting
+hilton miller,ignore
+are you logged in to the app now,check_login_flow
+its installing,ignore
+app is open,ignore
+what do you see on the app,activation_troubleshooting
+i just logged into it,ignore
+says welcome,activation_troubleshooting
+do see an activate button,activation_troubleshooting
+says validate email,activation_troubleshooting
+and next step is transfer number,activation_troubleshooting
+ok is that checked off,activation_troubleshooting
+can i have the email on your account,activation_troubleshooting
+thank you,conditional.positive
+what is your ios version,check_ios_version
+can you update your ios for me so we can activate,update_ios_flow
+minutes till install,chat_wait
+thank you,chat.greeting
+ok that is fine,ignore
+says minutes,chat_wait
+ok i am still here,ignore
+uodated started,update_ios_flow
+cool beans,ignore
+how are things coming along,ignore
+update is installing,update_ios_flow
+ok i am still here,ignore
+you still with me,ignore
+maybe seconds,chat_wait
+ok that is fine,ignore
+just checking on you,ignore
+update complete,update_ios_flow
+click activate,activation_troubleshooting
+yes please,conditional.positive
+how are things coming along,ignore
+i clicked activate and pay,activation_troubleshooting
+then it brought me back and it still says activate,activation_troubleshooting
+ok give me a sec,chat_wait
+you still on wifi right,check_wifi
+just got an email saying i signed up for autopay and payed,ignore
+ok can you power cycle for me real quick,cycle_device_sub_flow
+hell no,conditional.negative
+ok fine,ignore
+still says activate,activation_troubleshooting
+now click on activate again for me,activation_troubleshooting
+it loops,ignore
+i hit activate and then it loops back,activation_troubleshooting
+then i hit activate,ignore
+and it loops again,activation_troubleshooting
+never ending,ignore
+lets try to log out of the app take the sim out turn the phone off and insert the sim again and turn the phone back on and log back in the app,cycle_device_sub_flow
+i need the phone to connect to the sim,activation_troubleshooting
+thank you,chat.greeting
+it works,activation_successful
+awesome i see you are active on this end,ignore
+thank you,chat.greeting
+no problem,ignore
+tell your boss to let you leave early today,ignore
+have a good day,chat.greeting
+did you do a test call,check_call_or_text_flow
+i did,ignore
+it worked,conditional.positive
+customer closed chat window,ignore
+visclcviscareinappioshelp chat id,ignore
+to customer let us know whats going on and well connect you with a visible team member,chat.intent
+hi i have my visible sim card ive had it for a while i received the email that told me my carrier had released my number with the instructions on how to install the visible sim but it is still acting like my phone is not released when i switch to the visible sim i started this process on april and still havent been able to switch ive received no other communication from visible what gives is my phone still in the clutches of my current carrier did i miss something halp,activate_a_device
+iphone os,ignore
+thanks for reaching out today im timera and i can totally assist,chat.greeting
+i cant see emojis on my end but i can definitely help you out,ignore
+oh ha ok it was a thumbs up,ignore
+i apologize for the lack of communication on our end regarding your porting issue but i definitely want to help get you taken care of asap,chat.apologize
+can i grab your full name and the last of your imei so i can get you pulled up the imei can be found in settings general about,find_imei_sub_flow
+shayna houp,ignore
+thank you shayna,chat.greeting
+hang tight for me while i get you pulled up and we can get to the bottom of this together rest assured ive got your back,ignore
+thanks for your patience what kind of device are you trying to activate shayna,compatibility_check_sub_flow
+iphone se,compatibility_check_sub_flow
+trying to break up with att,change_carrier_flow
+great lets double check and make sure its compatible with our service,compatibility_check_sub_flow
+i already did that when i signed up,conditional.positive
+can you go to settings general about and tell me what model you have tap the a to get the numbers after the a,activation_troubleshooting
+one sec,chat_wait
+thank you ill be here for you,chat.greeting
+thank you one moment please,chat.greeting
+can you confirm that model for me shayna is it or,compatibility_check_sub_flow
+thank you,chat.greeting
+do you currently have the sim installed,chat.greeting
+no i have the att sim in right now when i put the visible sim in i get to the last step and then get the make sure your old carrier releases your number error message,release_sim_error_flow
+so i cant use my phone unless i use the old sim,release_sim_error_flow
+your port has been confirmed already so lets compllete the port by inserted the visible sim,porting_sub_flow
+ok so we might get disconnected when i trade out the sims hold please,ignore
+can you please connect to wifi and switch out the sim cards,insert_sim_flow
+ok on wifi,ignore
+one sec,chat_wait
+if you connect to wifi i should still be here for you when youre done,check_wifi
+still there,chat_wait
+ok i got a different error message this time,release_sim_error_flow
+what do you see,ignore
+can i send you a screen shot of the error message its a lengthy one,post_error_on_social
+yes you can send it to our twitter of facebook,post_error_on_social
+cool bone sec,chat_wait
+our twitter is visiblecare and our facebook is visible mobile,post_error_on_social
+just send it to our dms and let me know when youre done,post_error_on_social
+whats the twitter handle again,post_error_on_social
+our twitter is visiblecare and our facebook is visible mobile,post_error_on_social
+just dmd you my twitter is nerfherdingsm,post_error_on_social
+ok one moment while i check on that,chat_wait
+thanks for your patience shayna it looks like your device is carrier locked which is why youre unable to activate your device on our service please contact att and have them perform a full carrier and network unlock so we can get you up and running once they do that it will take about hours for the unlock to reflect on our end and for you to be able to pop in your sim and activate,release_sim_error_flow
+oh ok thanks,chat.greeting
+no problem please get that unlocked soon so we can get you onto our service,release_sim_error_flow
+is there anything else i can help with as of now,chat.additional_queries
+nope thanks,conditional.negative
+we cant wait to have you as part of the visible family if you have any other questions please dont hesitate to reach back out were here to help have a nice one shayna,chat.additional_queries
+customer connection lost the customer lost network connectivity,ignore
+visclcvissalesormarketingdtenganchoredcc chat id,ignore
+windows browser,ignore
+chrome page markers,ignore
+vishome unmarked page unmarked page unmarked page unmarked page page marker,ignore
+to customer let us know whats going on and well connect you with a visible team member,chat.intent
+hello i ordered visble sim and before i did it said it would be compatible with my phone but i popped it in and its saying unsupported,device_not_supported_flow
+wwwvisiblecomfaq page marker,ignore
+customer account,ignore
+not validated,ignore
+hi im toks and ill be assisting you please give me a few minutes and ill be right with you thanks for your patience,chat.greeting
+may i please have your first and last name and the last digits of your imei you can find it at,find_imei_sub_flow
+settings general about phone,find_imei_sub_flow
+yiosembom tangwa,ignore
+thank you,chat.greeting
+please give me a few minutes and ill be back,chat_wait
+thank you,chat.greeting
+what kind of device are you using,compatibility_check_sub_flow
+an iphone x,compatibility_check_sub_flow
+i ran it through the imei check it was compatible,compatibility_check_sub_flow
+please tell me the model you have you can find it at settings general about phone model,compatibility_check_sub_flow
+thank you,chat.greeting
+please give me a few minutes,chat_wait
+thanks for your patience,chat.greeting
+so you put in your sim and you are told its unsupported,device_not_supported_flow
+yes it says sim not supported,device_not_supported_flow
+give me a moment to get to the bottom of this,chat_wait
+thanks for your patience yiosembom,chat.greeting
+your phone is carrier locked,carrier_lock_flow
+you need to have it unlocked before you can move forward with our service,carrier_lock_flow
+can i assist you with anything else,chat.additional_queries
+did i lose you,ignore
+im not sure if youre there or not so im going to close the chat sorry if you want to continue the chat close it on your end then hit chat now and another agent will be in touch customer stopped typing,chat.close_chat
+visclcviscareorauthdtenganchoredcc chat id,ignore
+intel mac os x browser,ignore
+chrome page markers,ignore
+vishome unmarked page unmarked page unmarked page unmarked page page marker,ignore
+to customer let us know whats going on and well connect you with a visible team member,chat.intent
+sim card not working with iphone s plus,sim_not_working_flow
+wwwvisiblecom page marker,ignore
+customer account,ignore
+thanks for chatting in with us at visible my name is dana,activation_troubleshooting
+just to confirm you have trouble with activation correct,ignore
+i sincerely dont want you to be without proper service,ignore
+ill be more than happy to take it upon myself to help with accessing your account and help troubleshoot with you ive got your back,activation_troubleshooting
+thank you,chat.greeting
+please allow me a moment to access your account i want to take a look at this for you,account_overview_flow
+lets check the model number,compatibility_check_sub_flow
+as a heads up please tap on the first code of the model number and it will reveal a second code you can access this through the following steps settingsgeneralabout,compatibility_check_sub_flow
+sorry its not letting me access my phone since the sim isnt working,sim_not_working_flow
+its alright,ignore
+we do other things to troubleshoot,ignore
+lets take out the sim turn off the phone power the phone back on and insert the sim,cycle_device_sub_flow
+ok the imei is,find_imei_sub_flow
+i can double check to make sure that the phone is unlocked,check_device_unlock_flow
+as i do that you can shut down the phone and take out the sim,check_device_unlock_flow
+just as a heads up the phone is locked,unlock_phone_flow
+for now the phone will need to be unlocked by your provider,unlock_phone_flow
+please let me know once you are back,ignore
+ok thank you,chat.greeting
+it is paid of f which is wierd,unlock_phone_flow
+although the phone is paid off does guarantee that the phone is unlocked,unlock_phone_flow
+ok thank you for your help,chat.greeting
+other than reaching out to your provider to unlock the phone anything else that i can help with thus far,chat.additional_queries
+im not quite sure if youre still here with me but if you still need help please chat back in with us we do still thank you for choosing visible and please enjoy the rest of your day customer stopped typing,chat.close_chat
+visclcviscareorauthdtenganchoredcc chat id,ignore
+windows browser,ignore
+chrome page markers,ignore
+vishome unmarked page unmarked page unmarked page vishome page marker,ignore
+to customer let us know whats going on and well connect you with a visible team member,chat.intent
+my account hasnt been finalized by visible and so my att account cant be cancelled,create_visible_account_flow
+wwwvisiblecom page marker,ignore
+customer account,ignore
+thanks for reaching out today im timera and i can totally assist,chat.greeting
+i can definitely help with your porting issue but can you give me a bit more clarity on what you mean are you trying to leave visible or att,ignore
+im trying to leave att to join visible,switch_carrier_flow
+gotcha thanks for that info noah,chat.greeting
+youre not supposed to cancel your att account at all it will be done automatically once you fully activate with us,switch_carrier_flow
+if you cancel before you activate with us you will risk losing your phone number,switch_carrier_flow
+how am i supposed to activate,activate_a_device
+i can help with getting you up and runnig,ignore
+do you have your sim with you,ignore
+yeah i have it,ignore
+great can you tell me what kind of phone youre trying to activate,compatibility_check_sub_flow
+its a iphones,compatibility_check_sub_flow
+ok cool,chat.greeting
+lets go ahead and get you activated on your new service do you have the visible app installed already,activation_troubleshooting
+yes i do,conditional.positive
+now please remove your current sim card and insert your visible sim once its in powercycle your phone by turning it off and back on for me,cycle_device_sub_flow
+okay i will do that really quick,conditional.positive
+cool keep me updated ive got your back,chat_wait
+its telling me sim not supported the iphone from your carrier isnt supported,sim_not_working_flow
+hm it sounds like your device is carrier locked,carrier_lock_flow
+so i should talk to att,carrier_lock_flow
+yes you should contact them right away and ask them to perform a full carrier and network unlock on your phone,carrier_lock_flow
+okay thank you,chat.greeting
+once they do that it will take about hours for it to reflect in our system and for you to be able to activate your sim noah,
+still with me noah,ignore
+yeah im just starting the att unlocking prcess,ignore
+cool is there anything else i can help with today,chat.additional_queries
+no thats all i need thanks,conditional.negative
+youre so close to being visible if you have any other questions just chat back in and well be happy to help have a nice one noah,chat.additional_queries
+customer stopped typing,ignore
+visclcviscareinappioshelp chat id,ignore
+to customer let us know whats going on and well connect you with a visible team member,chat.intent
+can you check my previous chat history,check_previous_case_flow
+iphone salesforce,ignore
+customer account,ignore
+open os,ignore
+thanks for chatting in today youve reached the right person im chere and ill be taking care of you chat window minimized,chat.greeting
+hi derek ill be to do that for you just a moment chat window restored,ignore
+i followed all the steps and im still having the same issue,ignore
+just for confirmation can you verify your imei for me,find_imei_sub_flow
+thank you,chat.greeting
+derek i checked and your phone is carrier locked,carrier_lock_flow
+so until the carrier lock is removed we unfortunately cant activate service,carrier_lock_flow
+customer closed chat window,ignore
+visclcviscareinappioshelp chat id,ignore
+to customer let us know whats going on and well connect you with a visible team member,chat.intent
+hey tried to put the sim card in but it says its not supported,sim_not_working_flow
+iphone salesforce,ignore
+customer account,ignore
+open os,ignore
+thank you for patiently waiting you have reached trena with visible,chat.greeting
+i can help you with your activation,ignore
+can i have the first and last name on the account please,account_overview_flow
+michelle page,ignore
+thank you,chat.greeting
+are you there,ignore
+yes i am here,ignore
+i was looking over your account,ignore
+what kind of phone do you have,compatibility_check_sub_flow
+iphone s,compatibility_check_sub_flow
+ok can you send me the imei so i can check to see if the phone is locked,find_imei_sub_flow
+thank you,chat.greeting
+just a sec while i check this real quick,chat_wait
+looks like your phone is carrier locked by your previous carrier,carrier_lock_flow
+how do i fix that,ignore
+you will have to take it to your carrier and have them unlock the phone for you,carrier_lock_flow
+do you owe anything on your phone,ignore
+yes i do,ignore
+they probably will not unlock it until you pay the phone off,carrier_lock_flow
+customer closed chat window,ignore
+chat id,ignore
+to customer let us know whats going on and well connect you with a visible team member,chat.intent
+just put my new sim into my iphone for service transfer for phone number it says sim not supported is this just part of the transfer of service from att and will it eventually work within hours,sim_not_working_flow
+customer account,ignore
+open os,ignore
+android model,ignore
+good afternoon thanks for reaching out to visible im trena,chat.greeting
+let me check your account and see what is going on,account_overview_flow
+what kind of iphone do you have,compatibility_check_sub_flow
+can i have the first and last name on the account please,account_overview_flow
+checked for compatibility before purchasing sim,compatibility_check_sub_flow
+shiela evans,ignore
+thank you,chat.greeting
+what is the email on your account,account_overview_flow
+thank you,chat.greeting
+what model is your se you can find the model under settings general about,compatibility_check_sub_flow
+click on the box that says model and give me the last part a and the numbers afterwards,compatibility_check_sub_flow
+it wont let me go to anything since i put the visible sim in,ignore
+you cannot get to the settings,ignore
+did you log in to the iphone,ignore
+can you take the sim out and check for me,ignore
+yes please wait,chat_wait
+model number mlylla,ignore
+what is the numbers after the a,compatibility_check_sub_flow
+thank you,chat.greeting
+mlylla a,ignore
+thank you,chat.greeting
+we are compatible with that model phone let me check your imei to see if your phone is carrier locked,compatibility_check_sub_flow
+can i get your imei please,find_imei_sub_flow
+where do i find that,find_imei_sub_flow
+settings general about,find_imei_sub_flow
+found it,ignore
+thank you,chat.greeting
+let me check this for you,ignore
